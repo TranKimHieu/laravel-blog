@@ -68,9 +68,9 @@ return [
             'open' => true,
             'url'  => 'https://twitter.com/pigjian'
         ],
-        'meta' => '© Dwayne Blog 2016. Powered By Jiajian Chan',
+        'meta' => '© Dwayne Blog 2023. Powered By Dwayne Kuff',
     ],
 
-    'license' => 'Powered By Jiajian Chan.<br/>This article is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.',
+    'license' => 'Powered By Dwayne Kuff.<br/>This article is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.',
 
 ];
