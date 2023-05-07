@@ -1,0 +1,36 @@
+version: '2'
+
+services:
+  mariadb:
+    image: docker.io/bitnami/mariadb:10.6
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_USER=bn_myapp
+      - MARIADB_DATABASE=bitnami_myapp
+    volumes:
+        - ".mysql:/bitnami/mariadb/data"
+    ports:
+        - '3309:3306'
+
+  myapp:
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - '8002:8000'
+    environment:
+      - DB_HOST=mariadb
+      - DB_PORT=3306
+      - DB_USERNAME=bn_myapp
+      - DB_DATABASE=bitnami_myapp
+    volumes:
+      - '.:/usr/src/blog'
+    depends_on:
+      - mariadb
+
+#  apache:
+#    image: httpd:latest
+#    ports:
+#      - '9000:80'
+#    volumes:
+#      - ./comma26v2:/usr/local/apache2/htdocs
