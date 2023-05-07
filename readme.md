@@ -15,7 +15,7 @@
 - Roles & Permissions
 - and more...
 
-[PJ Blog](https://github.com/jcc/blog) Laravel 7.*
+[Dwayne Blog](https://github.com/jcc/blog) Laravel 7.*
 
 ## Server Requirements
 
