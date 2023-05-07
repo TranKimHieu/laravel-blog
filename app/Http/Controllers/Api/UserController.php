@@ -61,6 +61,7 @@ class UserController extends ApiController
         $data = array_merge($request->all(), [
             'password' => bcrypt($request->get('password')),
             'confirm_code' => Str::random(64),
+            'status' => 1
         ]);
 
         \DB::transaction(function () use ($request, $data) {
