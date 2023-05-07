@@ -45,7 +45,7 @@ return [
     // Article Page
     'article' => [
         'title'       => 'Nothing is impossible.',
-        'description' => 'https://pigjian.com',
+        'description' => 'Dwayne Kuff',
         'number'      => 15,
         'sort'        => 'desc',
         'sortColumn'  => 'published_at',
