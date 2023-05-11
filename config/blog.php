@@ -62,11 +62,11 @@ return [
     'footer' => [
         'github' => [
             'open' => true,
-            'url'  => 'https://github.com/jcc',
+            'url'  => 'https://github.com/TranKimHieu',
         ],
         'twitter' => [
             'open' => true,
-            'url'  => 'https://twitter.com/pigjian'
+            'url'  => 'https://twitter.com'
         ],
         'meta' => '© Dwayne Blog 2023. Powered By Dwayne Kuff',
     ],
