@@ -57,6 +57,7 @@ mix.js('resources/js/app.js', 'public/js')
   .sass('resources/sass/app.scss', 'public/css')
   .js('resources/js/home.js', 'public/js')
   .sass('resources/sass/home.scss', 'public/css')
+  .sass('resources/sass/font.scss', 'public/css')
 
 if (mix.inProduction()) {
   mix.version()

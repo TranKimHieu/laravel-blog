@@ -219,9 +219,12 @@ i.large {
 
 // Navbar
 .navbar {
-  font-family: Lato, "微软雅黑", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  //font-family: Lato, "微软雅黑", 'Helvetica Neue', Arial, Helvetica, sans-serif;
   border: none;
   background-color: #52697f;
+
+  text-transform: uppercase;
+  font-family: WiredMono, helvetica, sans-serif;
 
   .container {
     min-height: 60px;
@@ -292,6 +295,7 @@ i.large {
 
 // Footer
 .footer {
+  font-family: WiredMono, helvetica, sans-serif;
   background-color: #597289;
   color: #fff;
   margin-top: 30px;
