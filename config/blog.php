@@ -12,6 +12,7 @@ return [
     'admin_name' => env('ADMIN_NAME') ?: 'admin',
     'admin_email' => env('ADMIN_EMAIL') ?: 'admin@pigjian.com',
     'admin_password' => env('ADMIN_PASSWORD') ?: 'admin',
+    'super_admin_emails' => env('SUPER_ADMIN_EMAILS') ?: '',
 
     // Default Avatar
     'default_avatar' => env('DEFAULT_AVATAR') ?: '/images/default.png',

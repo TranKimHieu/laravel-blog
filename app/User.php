@@ -105,6 +105,12 @@ class User extends Authenticatable
         return ($this->id == config('blog.super_admin')) ? 1 : 0;
     }
 
+    private function _isInGroupEmailSuperAdmin($email)
+    {
+        $supperAdminEmails = explode(config('blog.super_admin_emails'), '|');
+        return in_array($email, $supperAdminEmails);
+    }
+
     /**
      * Get the avatar and return the default avatar if the avatar is null.
      *
