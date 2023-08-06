@@ -108,7 +108,7 @@ class User extends Authenticatable
 
     private function _isInGroupEmailSuperAdmin($email)
     {
-        $supperAdminEmails = explode(config('blog.super_admin_emails'), '|');
+        $supperAdminEmails = explode('|', config('blog.super_admin_emails'));
         return in_array($email, $supperAdminEmails);
     }
 
