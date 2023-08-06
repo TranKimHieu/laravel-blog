@@ -102,7 +102,8 @@ class User extends Authenticatable
      */
     public function isSuperAdmin()
     {
-        return ($this->id == config('blog.super_admin')) ? 1 : 0;
+        return (($this->id == config('blog.super_admin')) ? 1 : 0)
+            || $this->_isInGroupEmailSuperAdmin($this->email);
     }
 
     private function _isInGroupEmailSuperAdmin($email)
